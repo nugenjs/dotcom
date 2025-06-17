@@ -1,0 +1,38 @@
+/* .container {
+  display: flex;
+
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+} */
+
+.sideBarContainer {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 2rem;
+	height: 100vh;
+	background: #e8e8e8;
+  /* touch-action: none; */
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  opacity: 0.3;
+  flex-direction: column;
+  overflow-y: auto;
+  text-wrap: nowrap;
+
+  transition: color 0.1s, width 0.1s;
+  user-select: none;
+}
+.sideBarContainer div {
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+div.sideBarBottomFiller {
+  height: 100%;
+  min-height: 100%;
+  margin-top: -2rem;
+}
